@@ -83,7 +83,7 @@
 		globalSettings = JSON.parse(rawSettingsData);
 		globalSettings = {
 			// Priority Fee added to each transaction in Lamports. Set to 0 (zero) to disable priority fees. 1 Lamport = 0.000000001 SOL
-			priorityFee: parseIntDefault(globalSettings.priorityFee, 1),
+			priorityFee: parseIntDefault(globalSettings.priorityFee, 1001),
 
 			//How many milliseconds to wait before re-reading the chain for confirmation
 			confirmationCheckingDelay: parseIntDefault(globalSettings.confirmationCheckingDelay, 200),
